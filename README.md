@@ -1,7 +1,7 @@
 # CMPE-257-Project
 ## Machine Learning Project - Sentiment Analysis on Product Reviews
 
-**Team Details - Team 1:** [Student name - GitHub username)
+**Team Details - Team 1:** [Student name - GitHub username]
 
 Teja Sree Goli - Tejasree-Goli,
 
