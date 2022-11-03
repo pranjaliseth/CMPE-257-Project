@@ -1,7 +1,7 @@
 # CMPE-257-Project
 ## Machine Learning Project - Sentiment Analysis on Product Reviews
 
-Team Details - Team 1: [Student name - GitHub username)
+**Team Details - Team 1:** [Student name - GitHub username)
 
 Teja Sree Goli - Tejasree-Goli,
 
@@ -12,11 +12,13 @@ Sai Teja Kandukuri - AIDANXhang,
 Pavan Satyam - Pavan-Satyam,
 
 **Dataset**: 
+
 https://data.world/datafiniti/amazon-and-best-buy-electronics [from data.world]
 
 The above data set is taken from Data World [primary source: Datafiniti’s Product Database]. The dataset contains around 7200 online reviews posted on e-commerce websites like Amazon, BestBuy and Walmart for various brand products. The data set reviews about 50 electronic products that contain 27 different attributes including reviews title, reviews text, reviews username, reviews rating, product name, manufacturer, brand, image urls, etc.
     
 **Problem Statement**:
+
 The world is drastically shifting towards the era of online shopping and social media. People find it extremely feasible and less time consuming to shop online by just sitting and shopping for anything and everything they need from the comfort of their homes. This leads to a minimal customer-manufacturer interaction and for this reason, it raises a concern for the suppliers to figure out their product performance and analyze feedback. A manufacturer requires constant feedback on how their products are doing in the market and the level of customer satisfaction that they are delivering. 
 
 Therefore, to address this, we have a need for text and sentiment analysis of consumer feedback and product reviews that are purchased by consumers on online platforms. This approach will help in categorizing data based on certain attributes which will make it easier to analyze and observe the trends/reviews of products.
