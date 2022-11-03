@@ -2,10 +2,14 @@
 ## Machine Learning Project - Sentiment Analysis on Product Reviews
 
 Team Details - Team 1: [Student name - GitHub username)
-    Teja Sree Goli - Tejasree-Goli,
-    Pranjali Seth - pranjaliseth,
-    Sai Teja Kandukuri - AIDANXhang,
-    Pavan Satyam - Pavan-Satyam,
+
+Teja Sree Goli - Tejasree-Goli,
+
+Pranjali Seth - pranjaliseth,
+
+Sai Teja Kandukuri - AIDANXhang,
+
+Pavan Satyam - Pavan-Satyam,
 
 **Dataset**: 
 https://data.world/datafiniti/amazon-and-best-buy-electronics [from data.world]
