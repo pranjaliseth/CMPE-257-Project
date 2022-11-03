@@ -15,10 +15,12 @@ Team Details - Team 1: [Student name - GitHub username)
 Therefore, to address this, we have a need for text and sentiment analysis of consumer feedback and product reviews that are purchased by consumers on online platforms. This approach will help in categorizing data based on certain attributes which will make it easier to analyze and observe the trends/reviews of products.
 
 
-**1. Objective**: 
-        To determine whether a review on a given product is positive or negative by analyzing the text in user reviews on various products and performing a binary classification of each product's reviews.
-**2. Approach**: 
-        We will be implementing our model on supervised learning methods using word embeddings to predict or classify different sentiments. We plan on experimenting and exploring the data using Random Forest, SVMs, KNN or different BERT architectures.
-        a) Data Cleaning and Preprocessing: The raw data is cleaned by removing the rows which have null values for the columns: reviews.rating, reviews.title and reviews.text columns. The duplicate records in the dataset have been dropped. Stopwords have been removed using the Natural language Toolkit (NLTK) module.
-        b) Initial Findings: Post data visualization, we observed the frequently used words by consumers in the reviews, frequency of the ratings, average rating of the various brands and the correlation between review text length and review ratings.
-        c) Challenges: There is imbalance in the dataset with a majority of positive ratings. Also, for the negative ratings, the review texts are minimal.
+Objective: To determine whether a review on a given product is positive or negative by analyzing the text in user reviews on various products and performing a binary classification of each product's reviews.
+
+Approach: We will be implementing our model on supervised learning methods using word embeddings to predict or classify different sentiments. We plan on experimenting and exploring the data using KNN, SVMs, Random Forest Classifier or different BERT architectures.
+
+    Data Cleaning and Preprocessing: The raw data is cleaned by removing the rows which have null values for the columns: reviews.rating, reviews.title and reviews.text columns. The duplicate records in the dataset have been dropped. Stopwords have been removed using the Natural Language Toolkit (NLTK) module.
+
+    Initial Findings: Post data visualization, we observed the frequently used words by consumers in the reviews, frequency of the ratings, average rating of various brands and the correlation between variables in the data. The reviews are mostly positive, even on the brand/manufacturer level. Moreover, the text reviews are significantly higher for the positive ratings and most of the products are recommended by the users which shows an incline towards higher positive ratings in the data.
+    Challenges: There is imbalance in the dataset with a majority of positive ratings. Also, for the negative ratings, the review texts are minimal.
+
