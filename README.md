@@ -33,3 +33,14 @@ Therefore, to address this, we have a need for text and sentiment analysis of co
 **Initial Findings:** Post data visualization, we observed the frequently used words by consumers in the reviews, frequency of the ratings, average rating of various brands and the correlation between variables in the data. The reviews are mostly positive, even on the brand/manufacturer level. Moreover, the text reviews are significantly higher for the positive ratings and most of the products are recommended by the users which shows an incline towards higher positive ratings in the data.
 
 **Challenges:** There is imbalance in the dataset with a majority of positive ratings. Also, for the negative ratings, the review texts are minimal.
+
+#11/25/2022
+**Models Developed:**
+    1. Random Forest Classifier - Sai Teja
+    2. Logistic Regression - Sai Teja
+    3. SVM - Teja Sree
+    4. KNN 
+    5. ExtraTree Classifier
+    6. XGBoost Classifier
+    7. Linear Regression
+    8. ??
