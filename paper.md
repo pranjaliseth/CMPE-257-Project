@@ -41,23 +41,23 @@ Over-sampling - This method focuses on upscaling the sample sizes of all the cla
 
 Text classification can be implemented using various machine learning models. The ML algorithms used in this project are:
 
-**RandomForest Classifier: **
+**RandomForest Classifier:**
 Random Forest is a supervised learning decision tree based model. On randomly chosen data samples, random forests generate decision trees, collect predictions from each tree, then vote on the best response. Additionally, it offers a fairly accurate indication of the feature's relevance.
  
-**KNN Classification: **
+**KNN Classification:**
 K-Nearest Neighbors is a non-linear classification method that calculates the Euclidean distance between the target point and k number of neighboring points and then classifies the output accordingly. The value of K determines the accuracy of the classification model. 
  
-**SVM Classifier: **
+**SVM Classifier:**
 This is a type of supervised machine learning algorithm that performs classification or regression tasks. It classifies the data points using a hyperplane that has the maximum margin between the classes.
 The SVM classification model has been implemented only for the unsampled data and under-sampled data points. For oversampled data points, the model ran for > 2hrs.  
 
-**ExtraTrees Classifier: **
+**ExtraTrees Classifier:**
 ExtraTrees Classifier is a decision tree-based model that is similar to Random Forest Classifier and differs from it only in how the decision trees in the forest are built. In Extra Trees, randomness doesn’t come from bootstrapping of data, but rather comes from the random splits of all observations.
 
-**XGBoost Classifier: **
+**XGBoost Classifier:**
 Each independent variable is given a weight before being input into the decision tree that predicts outcomes. Variables that the tree incorrectly predicted are given more weight before being placed into the second decision tree. These distinct classifiers/predictors are then combined to produce a robust and accurate model.
 
-**Logistic Regression: **
+**Logistic Regression:**
 It is a linear classification model which is used to predict/classify the outcome from a determined set of outputs. Though Logistic Regression is easier to implement and works well with linearly separable data, it is rare to find such data in the real world.
 
 ## RESULTS AND COMPARISON
