@@ -43,30 +43,39 @@ Text classification can be implemented using various machine learning models. Th
 
 **RandomForest Classifier:**
 Random Forest is a supervised learning decision tree based model. On randomly chosen data samples, random forests generate decision trees, collect predictions from each tree, then vote on the best response. Additionally, it offers a fairly accurate indication of the feature's relevance.
+ https://github.com/Tejasree-Goli/CMPE-257-Project/commit/b225ab71075d3b8ce387addbfacf67d03513ad20
  
 **KNN Classification:**
 K-Nearest Neighbors is a non-linear classification method that calculates the Euclidean distance between the target point and k number of neighboring points and then classifies the output accordingly. The value of K determines the accuracy of the classification model. 
+https://github.com/Tejasree-Goli/CMPE-257-Project/commit/bc36edf28efa013fe7e6ee6fbac8a96da9a3e3f1
  
 **SVM Classifier:**
 This is a type of supervised machine learning algorithm that performs classification or regression tasks. It classifies the data points using a hyperplane that has the maximum margin between the classes.
-The SVM classification model has been implemented only for the unsampled data and under-sampled data points. For oversampled data points, the model ran for > 2hrs.  
+The SVM classification model has been implemented only for the unsampled data and under-sampled data points. For oversampled data points, the model ran for > 2hrs.  https://github.com/Tejasree-Goli/CMPE-257-Project/commit/81ae11adacaecf271d52be542131027c43d9fda0
 
 **ExtraTrees Classifier:**
 ExtraTrees Classifier is a decision tree-based model that is similar to Random Forest Classifier and differs from it only in how the decision trees in the forest are built. In Extra Trees, randomness doesn’t come from bootstrapping of data, but rather comes from the random splits of all observations.
+https://github.com/Tejasree-Goli/CMPE-257-Project/commit/4b89995f167feffec0f1600a7c3f7043ba5e40e3
 
 **XGBoost Classifier:**
 Each independent variable is given a weight before being input into the decision tree that predicts outcomes. Variables that the tree incorrectly predicted are given more weight before being placed into the second decision tree. These distinct classifiers/predictors are then combined to produce a robust and accurate model.
+https://github.com/Tejasree-Goli/CMPE-257-Project/commit/6797033e984d14611eff78b88456101bd9d31d06
 
 **Logistic Regression:**
 It is a linear classification model which is used to predict/classify the outcome from a determined set of outputs. Though Logistic Regression is easier to implement and works well with linearly separable data, it is rare to find such data in the real world.
+https://github.com/Tejasree-Goli/CMPE-257-Project/commit/607b429f37e5e6db80df4b92521b7b537b7188de
 
-## RESULTS AND COMPARISON
+## Results and Comparison
 
 We have implemented all the models on unsampled, oversampled and under-sampled data and evaluated them on F1 score metric. A confusion matrix for the ratings 1-5 and a precision-recall curve is plotted to observe the classification performance. We have also calculated the log loss to compare. Finally, we gave custom test inputs to the models to judge the reviews predictions. 
 
-The 2 step-learning process was implemented and validated. For models such as RandomForestClassifier, ExtraTreeClassifier and Logistic Regression, the training accuracy score on the oversampled data is >90 and the micro average F1 score is >=89.     
+The 2 step-learning process was implemented and validated. For models such as RandomForestClassifier, ExtraTreeClassifier and Logistic Regression, the training accuracy score on the oversampled data is >90 and the micro average F1 score is >=89.   
 
-## CONCLUSION 
+https://github.com/Tejasree-Goli/CMPE-257-Project/commit/c2ca0735a79c530a9da85fdd260b172bd256263f
+
+According to the above table, oversampled data outperformed unsampled data, whereas under-sampled data did not perform well for most of the models. The corresponding graphs of each model’s confusion matrix and comparison are provided in the project_dir/paper/images folder.
+
+## Conclusion 
 
 Results from under-sampled and oversampled data were found to differ noticeably, with the oversampled dataset appearing to be more favorable.
 
