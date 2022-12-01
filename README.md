@@ -26,7 +26,7 @@ The world is drastically shifting towards the era of online shopping and social 
 
 Therefore, to address this, we have a need for text and sentiment analysis of consumer feedback and product reviews that are purchased by consumers on online platforms. This approach will help in categorizing data based on certain attributes which will make it easier to analyze and observe the trends/reviews of products.
 
-**Objective:** To determine whether a review on a given product is positive or negative by analyzing the text in user reviews on various products and performing a binary classification of each product's reviews.
+**Objective:** To determine whether a review on a given product is positive or negative by analyzing the text in user reviews on various products and performing classification of each product's reviews.
 
 **Approach:** We will be implementing our model on supervised learning methods using word embeddings to predict or classify different sentiments. We plan on experimenting and exploring the data using KNN, SVMs, Random Forest Classifier or different BERT architectures.
 
