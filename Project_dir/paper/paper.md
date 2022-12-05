@@ -1,6 +1,6 @@
 ---
 title: Sentiment Analysis on Product Reviews
-date: "December 2021"
+date: "December 2022"
 author: Teja Sree Goli, Pranjali, Sai Teja Kandukuri, Pavan Satyam - San José State University
 
 header-includes: |
