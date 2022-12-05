@@ -15,6 +15,7 @@ The world is drastically shifting towards the era of online shopping and social 
 # Introduction
 
 With the rise in online shopping these days, companies are quickly improving their online services for their customers. Different brands are constantly working to figure out ways to retain their existing customers while also attracting new customers. Customer satisfaction and online reviews play a big part in businesses today. Understanding the performance and reviews of their products is crucial for both producers and sellers in the internet age. Artificial Intelligence and Machine Learning is widely being used for this purpose. Depending on the type of data and the domain for which it is used, many machine learning models are available that can be deployed based on the performance. Determining the review rating of a given product or whether the review on a given product is positive or negative will help in correlating to the customer’s satisfaction and improving the sales of these products. 
+
 The objective of this project is to explore and implement different machine learning models for electronic product reviews dataset and study the performance of each model. Different error metrics will be computed, and their corresponding confusion matrix will be plotted, to understand the model's performance. We compare each model's performance to the others based on these error metrics after implementing all the potential models. 
 
 ## Data:
@@ -28,15 +29,21 @@ https://data.world/datafiniti/grammar-and-online-product-reviews [from data.worl
 ## Data Cleaning and Preprocessing
 
 The performance of any machine learning model depends significantly on data cleaning and pre-processing. Therefore, we have employed a selected number of techniques to clean the raw text data. The different types of pre-processing techniques used in this project are:
+
 Lowercasing: Convert all the characters of the text in the reviews to lowercase. It is done to maintain the consistency of the text to train for predicting the output and avoid sparsity issues.
+
 Lemmatization: It is a technique similar to stemming where the inflexions are removed and mapped to their corresponding root word. This technique is used to make all similar words to be uniform.
+
 Stop-word removal: Stop-word removal is used to remove the commonly used words so that the model can focus on the keywords while training.
+
 Drop Null and Duplicate values: The rows without the data for the essential metrics that are used to predict the output or containing duplicate records have been dropped from the dataset, and the columns that are not necessary have been omitted from the dataset.
 
 ## Handling Data Imbalance
 
 An imbalance of data sets can result in a biased training model, towards the majority class. In order to tackle this problem, certain methods were experimented with.
+
 a.    Under-sampling - This method focuses on reducing the sample size of all the classes to the size of the minority class. Near Miss technique was used to implement under-sampling in the data set. Although this technique balances the data points, it eliminates good sample points, thereby leading the model to not perform the best.
+
 b.    Over-sampling - This method focuses on upscaling the sample sizes of all the classes based on the majority class size. SMOTE technique was used to implement this part of the code. SMOTE produces synthetic samples based on the already existing samples in each class. Oversampled data performed better than the under-sampled one in all the classification/regression methods.
 
 # Methods
