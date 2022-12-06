@@ -47,4 +47,47 @@ Over-sampling - This method focuses on upscaling the sample sizes of all the cla
 
 Random Forest is a supervised learning decision tree based model. On randomly chosen data samples, random forests generate decision trees, collect predictions from each tree, then vote on the best response. Additionally, it offers a fairly accurate indication of the feature's relevance.
   
-![Image 1](images/comparison_models.png)
+![image 1](images/RF_classifier.png)
+
+We have achieved a training score of 0.99 for undersampled, unsampled and oversampled Random Forest Classification models. A confusion matrix and precision-recall have also been plotted from the error metric values to visualize the performance of the model.
+
+## KNN Classification: 
+
+K-Nearest Neighbors is a non-linear classification method that calculates the Euclidean distance between the target point and k number of neighboring points and then classifies the output accordingly. The value of K determines the accuracy of the classification model. 
+
+![image 2](images/knn.png)
+
+The training scores obtained for the undersampled, unsampled and oversampled data in KNN classification are 0.48, 0.91 and 0.86 respectively. The precision-recall curve for different ratings has been plotted along with the confusion matrix.
+
+## SVM Classifier: 
+This is a type of supervised machine learning algorithm that performs classification or regression tasks. It classifies the data points using a hyperplane that has the maximum margin between the classes.
+
+![image 3](images/svm.png)
+
+The SVM classification model has been implemented only for the unsampled data and under-sampled data points as the model for oversampled data points took > 2 hrs to run.
+
+The achieved model training accuracy for unsampled data is 0.76 while it is 0.75 for undersampled data. The confusion matrix for both the models has been plotted using the error metric values.
+
+## ExtraTrees Classifier: 
+
+ExtraTrees Classifier is a decision tree-based model that is similar to Random Forest Classifier and differs from it only in how the decision trees in the forest are built. In Extra Trees, randomness doesn’t come from bootstrapping of data, but rather comes from the random splits of all observations.
+
+![image 4](images/ExtraTrees.jpeg)
+
+Similar to the Random Forest Classifier, the ExtraTrees classifier model has obtained the training score of 0.99 for the three different considered data samples. However, the precision-recall curve values are better than the aforementioned model.
+
+## XgBoost Classifier:  
+
+Each independent variable is given a weight before being input into the decision tree that predicts outcomes. Variables that the tree incorrectly predicted are given more weight before being placed into the second decision tree. These distinct classifiers/predictors are then combined to produce a robust and accurate model.
+
+![image 5](images/xg.png)
+
+The model training scores in the XgBoost classifier for oversampled, unsampled and undersampled data points are 0.59, 0.69 and 0.63 respectively. Their corresponding confusion matrix and precision-recall curves have been plotted accordingly.
+
+## Logistic Regression: 
+
+It is a linear classification model which is used to predict/classify the outcome from a determined set of outputs. Though Logistic Regression is easier to implement and works well with linearly separable data, it is rare to find such data in the real world.
+
+![image 6](images/lr.png)
+
+The training accuracy scores for the implemented logistic regression model are 0.92, 0.93 and 0.90 respectively for the undersampled, unsampled and oversampled data points.
