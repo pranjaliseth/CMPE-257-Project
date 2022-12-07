@@ -22,7 +22,7 @@ The world is drastically shifting towards the era of online shopping and social 
 
 With the rise in online shopping these days, companies are quickly improving their online services for their customers. Different brands are constantly working to figure out ways to retain their existing customers while also attracting new customers. Customer satisfaction and online reviews play a big part in businesses today. Understanding the performance and reviews of their products is crucial for both producers and sellers in the internet age. Artificial Intelligence and Machine Learning is widely being used for this purpose. Depending on the type of data and the domain for which it is used, many machine learning models are available that can be deployed based on the performance. Determining the review rating of a given product or whether the review on a given product is positive or negative will help in correlating to the customer's satisfaction and improving the sales of these products. 
 
-The objective of this project is to explore and implement different machine learning models for online product reviews dataset and study the performance of each model. We have used [Amazon and Best Buy Electronics](https://data.world/datafiniti/amazon-and-best-buy-electronics) and [Grammar and Online Product Reviews](https://data.world/datafiniti/grammar-and-online-product-reviews) data. This is a list of over 7,000 online reviews for 50 electronic products from websites like Amazon and Best Buy and a list of over 71,045 reviews from 1,000 different products provided by Datafiniti's Product Database. We compare the performance of each model based on classification report or f1 scores, and with the help of confusion matrices to understand and evaluate the models performance. 
+The objective of this project is to explore and implement different machine learning models for online product reviews dataset and study the performance of each model. We have used [Amazon and Best Buy Electronics](https://data.world/datafiniti/amazon-and-best-buy-electronics) and [Grammar and Online Product Reviews](https://data.world/datafiniti/grammar-and-online-product-reviews) data. We compare the performance of each model based on classification report or f1 scores, and with the help of confusion matrices to understand and evaluate the models performance. 
 
 # 2. Data[^3]
 [^3]:Data
@@ -55,7 +55,7 @@ The distribution is mostly positive (4 and 5) and it implies that the customers 
 </figure> -->
 <img src="images/data_distribution.jpeg" alt="distribution" height="400" width="400"/>
 
-The length of reviews for ratings 4 or 5 is more when compared to ratings 1, 2 or 3. The text is reviews for the ratings 4 and 5 is more and this gives more data for us to analyze these positive reviews. The plot is shown in Fig 2. below. 
+The length of reviews for ratings 4 or 5 is more when compared to ratings 1, 2 or 3. The text in reviews for the ratings 4 and 5 is more and this gives more data for us to analyze these positive reviews. The plot is shown in Fig 2. below. 
 
 <!-- <figure style='width:90%'>
 ![](images/len_rating.jpeg )
@@ -65,7 +65,7 @@ The length of reviews for ratings 4 or 5 is more when compared to ratings 1, 2 o
 </figure> -->
 <img src="images/len_rating.jpeg" alt="len" height="400" width="1000"/>
 
-The most frequently used words gives us a overview of what words effect the reviews positively or negatively. The plot is shown in Fig 3 below.
+The most frequently used words gives us an overview of what words effect the reviews positively or negatively. The plot is shown in Fig 3 below.
 
 <!-- <figure style='width:90%'>
 ![](images/Fre_words.png )
@@ -77,9 +77,9 @@ The most frequently used words gives us a overview of what words effect the revi
 
 ## 2.3 Handling Data Imbalance
 
-An imbalance of data sets can result in a biased training model, towards the majority class. In order to tackle this problem, certain methods were experimented with.
+An imbalance in the dataset can result in a biased training model, towards the majority class. In order to tackle this problem, the following resampling techniques were used:
 
-1) Under-sampling - This method focuses on reducing the sample size of all the classes to the size of the minority class. Near Miss technique was used to implement under-sampling in the data set. Although this technique balances the data points, it eliminates good sample points, thereby leading the model to not perform the best.
+1) Under-sampling - This method focuses on reducing the sample size of all the classes to the size of the minority class. Near Miss technique was used to implement under-sampling in the data set. Although this technique balances the data points, it eliminates good sample points, thereby leading to a decrease in the performance of the model.
 
 2) Over-sampling - This method focuses on upscaling the sample sizes of all the classes based on the majority class size. SMOTE technique was used to implement this part of the code. SMOTE produces synthetic samples based on the already existing samples in each class. Oversampled data performed better than the under-sampled one in all the classification/regression methods.
 
@@ -88,7 +88,7 @@ An imbalance of data sets can result in a biased training model, towards the maj
 
 ## 3.1 Logistic Regression: 
 
-It is a linear classification model which is used to predict/classify the outcome from a determined set of outputs. In statistics, the logistic model (or logit model) is a statistical model that models the probability of an event taking place by having the log-odds for the event be a linear combination of one or more independent variables. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (the coefficients in the linear combination). Though Logistic Regression is easier to implement and works well with linearly separable data, it is rare to find such data in the real world.
+It is a linear classification model which is used to predict/classify the outcome from a determined set of outputs. In statistics, the logistic model (or logit model) is a statistical model that models the probability of an event taking place by having the log-odds for the event, with linear combination of one or more independent variables. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (the coefficients in the linear combination). Though Logistic Regression is easier to implement and works well with linearly separable data, it is rare to find such data in the real world.
 
 <!-- <figure style='width:90%'>
 ![](images/LogisticRegression_classifier.png )
@@ -119,7 +119,7 @@ The training accuracy scores for the implemented logistic regression model are 0
 
 ## 3.2 Random Forest Classifier: 
 
-Random Forest is a supervised learning decision tree based model. On randomly chosen data samples, random forests generate decision trees, collect predictions from each tree, then vote on the best response. Additionally, it offers a fairly accurate indication of the feature's relevance.
+Random Forest is a supervised learning decision tree based model. On randomly chosen data samples, random forest classifier generates decision trees, collect predictions from each tree, then vote on the best response. Additionally, it offers a fairly accurate indication of the feature's relevance.
   
 <!-- <figure style='width:90%'>
 ![](images/RF_classifier.png )
@@ -180,9 +180,9 @@ Similar to the Random Forest Classifier, the ExtraTrees classifier model has obt
 <img src="images/Confusion_matrix_ExtraTrees.png" alt="xtracm" height="400" width="400"/>
 <img src="images/Precision_Recall_ExtraTrees.png" alt="xtrapr" height="400" width="400"/>
 
-## 3.4 XgBoost Classifier:  
+## 3.4 XGBoost Classifier:  
 
-In XGBoost classifier, each independent variable is given a weight before being input into the decision tree that predicts outcomes. Variables that the tree incorrectly predicted are given more weight before being placed into the second decision tree. These distinct classifiers/predictors are then combined to produce a robust and accurate model.
+In XGBoost classifier, each independent variable is given a weight before passing it as an input to the decision tree. Variables that the tree incorrectly predicted are given more weight before being placed into the second decision tree. These distinct classifiers/predictors are then combined to produce a robust and accurate model.
 
 <!-- <figure style='width:90%'>
 ![](images/XgBoost.jpeg )
@@ -223,7 +223,7 @@ K-Nearest Neighbors is a non-linear classification method that calculates the Eu
 </figure> -->
 <img src="images/KNN_classifier.png" alt="knn" height="400" width="400"/>
 
-The training scores obtained for the undersampled, unsampled and oversampled data in KNN classification are 0.48, 0.91 and 0.86 respectively. The F1 scores achieved on KNeighbors classifier are 0.26, 0.43, 0.82 respectively for the undersampled, unsampled and oversampled data. Oversampling didn't work out well for this model. The confusion matrix and precision recall curve are plotted below to show the performance of classification per each class. 
+The training scores obtained for the undersampled, unsampled and oversampled data in KNN classification are 0.48, 0.91 and 0.86 respectively. The F1 scores achieved on KNeighbors classifier are 0.26, 0.43, 0.82 respectively for the undersampled, unsampled and oversampled data. The confusion matrix and precision recall curve are plotted below to show the performance of classification per each class. 
 
 <!-- <figure style='width:90%'>
 ![](images/confusion_matrix_knn.png )
@@ -269,7 +269,7 @@ The achieved model training accuracy for unsampled data is 0.76 while it is 0.75
 # 4. Results and Comparison[^5]
 [^5]:Results
 
-We have implemented all the models on unsampled, undersampled and oversampled data and evaluated them on F1 score metric. A confusion matrix for the ratings 1 - 5 and a precision-recall curve for each class label are plotted to observe the classification performance. We have also calculated the log loss to compare the different implemented models. Finally, we gave custom test inputs to the models to judge the reviews predictions. 
+We have implemented all the models on unsampled, undersampled and oversampled data and evaluated them on F1 score metric. A confusion matrix for the ratings 1 - 5 and a precision-recall curve for each class label are plotted to observe the classification performance. We have also calculated the log loss to compare the different implemented models. Finally, we gave custom test inputs to the models to judge the review prediction. 
 
 The 2 step-learning process was implemented and validated. For models such as RandomForestClassifier, ExtraTreeClassifier and Logistic Regression, the training accuracy score on the oversampled data is > 90 and the micro average F1 score is >= 89.
 
@@ -279,7 +279,7 @@ The 2 step-learning process was implemented and validated. For models such as Ra
 	<b>\phantom{....}Table 1: Results comparison for all the models.</b>
 </figcaption>
 </figure> -->
-<img src="images/results_comparison.png" alt="results" height="400" width="800"/>
+<img src="images/results comparison.png" alt="results" height="400" width="800"/>
 
 According to the above table, oversampled data outperformed undersampled/unsampled data. The corresponding confusion matrix and precision-recall curves of each model that are shown in this report are provided in the GitHub path: project_dir/paper/images folder.
 
@@ -291,7 +291,7 @@ According to the above table, oversampled data outperformed undersampled/unsampl
 
 2) Sampling the data points has helped us in handling the data imbalance and preventing biased model training.
 
-3) For the models Random forest classifier and Extra tree classifier, the classification of ratings is very good. The models trained on oversampled data gave good F1 scores and were able to perform well even for custom input cases. For logistic regression, the ratings are divided as sentiments and this models has also performed very good, with good F1 score and accurate sentiment prediction of custom test inputs. 
+3) For Random forest classifier and Extra tree classifier, the rating classifcation is accurate. The models trained on oversampled data gave good F1 scores and were able to perform well even for custom input cases. For logistic regression, the ratings are divided as sentiments and this model has also performed well, with good F1 score and accurate sentiment prediction of custom test inputs. 
 
 4) We can further train other models using Neural Networks. This can be used to predict the performance of a product in the market based on its specific features and the correlation between products possessing those attributes and their customer satisfaction ratios.
 
