@@ -1,6 +1,6 @@
 ---
 title: Reviews Prediction and Sentiment Analysis on Online Product Reviews Data
-date: "December 2022"
+date: "6th December 2022"
 author: 
     Sai Teja Kandukuri,
     Teja Sree Goli,
@@ -127,7 +127,7 @@ Random Forest is a supervised learning decision tree based model. On randomly ch
 	<b>\phantom{....}Fig 7: Random Forest Classifier</b>
 </figcaption>
 </figure> -->
-<img src="images/RF_classifier.png" alt="RF" height="400" width="400"/>
+<img src="images/RF_classifier.jpeg" alt="RF" height="400" width="400"/>
 
 We have achieved a training score of 0.99 for undersampled, unsampled and oversampled Random Forest Classification models. The F1 scores achieved on random forest classifier are 0.61, 0.72, 0.93 respectively for the undersampled, unsampled and oversampled data. The confusion matrix and precision recall curve are plotted below to show the performance of classification per each class. 
 
