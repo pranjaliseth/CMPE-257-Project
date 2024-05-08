@@ -98,6 +98,11 @@ def word_cleaner(data):
 
 """Finding most frequent words"""
 
+word_frequency = pd.DataFrame(
+    nltk.FreqDist(word_cleaner(reviews_df["full_review"])).most_common(25),
+    columns=["Frequent_Words", "Frequency"],
+)
+
 plt.figure(figsize=(8, 8))
 plt.xticks(rotation=90)
 plt.title("Most frequently used words in reviews")
@@ -267,9 +272,40 @@ print('accuracy:',acc)
 print('accuracy:',acc_us)
 print('accuracy:',acc_os)
 
+from sklearn.metrics import confusion_matrix,f1_score
+conf_mat = confusion_matrix(
+        y_test, y_pred)
+print(conf_mat)
+
+"""Training Score"""
+
+y_pred_train_us= classifier.predict(X_train_us)
+print(f1_score(y_train_us, y_pred_train_us))
+
+
+
+conf_mat = confusion_matrix(
+        y_test_us, y_pred_us)
+sns.set(rc={'figure.figsize':(10,10)})
+sns.set(font_scale=1)
+skplt.metrics.plot_confusion_matrix(y_test_us, y_pred_us, normalize=True, title = 'Confusion Matrix for KneighborsClassifier (undersampled)')
+plt.show()
+print(conf_mat)
+
+"""Testing score"""
+
+print(f1_score(y_test, y_pred))
+print(f1_score())
+
+conf_mat = confusion_matrix(
+        y_test_os, y_pred_os)
+print(conf_mat)
+
 """#Test cases"""
 
 custom_test = word_vec.transform(["so satisfied with the purchase good product works well", "this device feels ok it works fine", "really disappointed with the purchase defective product not working", "used to be good but since the change the worst product ever", "used to be bad but from when it was updated it is the best product ever"])
 
 classifier.predict(custom_test)
+
+
 

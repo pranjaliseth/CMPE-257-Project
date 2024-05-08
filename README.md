@@ -12,9 +12,11 @@ Sai Teja Kandukuri - AIDANXhang,
 
 Pavan Satyam - Pavan-Satyam,
 
-**Dataset**: 
+**Dataset (Online Product Reviews Data)**: 
 
 https://data.world/datafiniti/amazon-and-best-buy-electronics [from data.world]
+
+https://data.world/datafiniti/grammar-and-online-product-reviews [from data.world]
 
 The above data set is taken from Data World [primary source: Datafiniti’s Product Database]. The dataset contains around 7200 online reviews posted on e-commerce websites like Amazon, BestBuy and Walmart for various brand products. The data set reviews about 50 electronic products that contain 27 different attributes including reviews title, reviews text, reviews username, reviews rating, product name, manufacturer, brand, image urls, etc.
     
@@ -24,7 +26,7 @@ The world is drastically shifting towards the era of online shopping and social 
 
 Therefore, to address this, we have a need for text and sentiment analysis of consumer feedback and product reviews that are purchased by consumers on online platforms. This approach will help in categorizing data based on certain attributes which will make it easier to analyze and observe the trends/reviews of products.
 
-**Objective:** To determine whether a review on a given product is positive or negative by analyzing the text in user reviews on various products and performing a binary classification of each product's reviews.
+**Objective:** To determine whether a review on a given product is positive or negative by analyzing the text in user reviews on various products and performing classification of each product's reviews.
 
 **Approach:** We will be implementing our model on supervised learning methods using word embeddings to predict or classify different sentiments. We plan on experimenting and exploring the data using KNN, SVMs, Random Forest Classifier or different BERT architectures.
 
@@ -33,14 +35,3 @@ Therefore, to address this, we have a need for text and sentiment analysis of co
 **Initial Findings:** Post data visualization, we observed the frequently used words by consumers in the reviews, frequency of the ratings, average rating of various brands and the correlation between variables in the data. The reviews are mostly positive, even on the brand/manufacturer level. Moreover, the text reviews are significantly higher for the positive ratings and most of the products are recommended by the users which shows an incline towards higher positive ratings in the data.
 
 **Challenges:** There is imbalance in the dataset with a majority of positive ratings. Also, for the negative ratings, the review texts are minimal.
-
-#11/25/2022
-**Models Developed:**
-    1. Random Forest Classifier - Sai Teja
-    2. Logistic Regression - Sai Teja
-    3. SVM - Teja Sree
-    4. KNN 
-    5. ExtraTree Classifier
-    6. XGBoost Classifier
-    7. Linear Regression
-    8. ??
